@@ -1,4 +1,4 @@
-class Particle {
+class Particles {
  constructor(x, y) {
  var options = {
  restitution: 1,
@@ -18,7 +18,7 @@ display() {
  rotate(angle);
  imageMode(CENTER);
  noStroke();
- fill("white");
+ fill(this.color);
  ellipseMode(RADIUS);
  ellipse(0,0,this.r,this.r);
  pop();
